@@ -1,0 +1,14 @@
+#mysql
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.com.summer.springvuedemo.demo.entity
+
+server:
+  port: 9000
